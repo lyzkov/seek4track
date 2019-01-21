@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Seek4Track
 //
-//  Created by BOGU$ on 21/01/2019.
+//  Created by lyzkov on 21/01/2019.
 //  Copyright © 2019 lyzkov. All rights reserved.
 //
 

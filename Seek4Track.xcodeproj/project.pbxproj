@@ -109,12 +109,11 @@
 		F3EA78E321F61E2F009A6453 /* Seek4Track */ = {
 			isa = PBXGroup;
 			children = (
-				F3EA78E421F61E2F009A6453 /* AppDelegate.swift */,
-				F3EA78E621F61E2F009A6453 /* ViewController.swift */,
-				F3EA78E821F61E2F009A6453 /* Main.storyboard */,
-				F3EA78EB21F61E30009A6453 /* Assets.xcassets */,
-				F3EA78ED21F61E30009A6453 /* LaunchScreen.storyboard */,
-				F3EA78F021F61E30009A6453 /* Info.plist */,
+				F3EA790721F63E56009A6453 /* Config */,
+				F3EA790421F63CE1009A6453 /* Common */,
+				F3EA790621F63D50009A6453 /* Misc */,
+				F3EA790821F64034009A6453 /* Resource */,
+				F3EA790521F63D1B009A6453 /* Scene */,
 			);
 			path = Seek4Track;
 			sourceTree = "<group>";
@@ -126,6 +125,47 @@
 				F3EA78FB21F61E30009A6453 /* Info.plist */,
 			);
 			path = Seek4TrackTests;
+			sourceTree = "<group>";
+		};
+		F3EA790421F63CE1009A6453 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F3EA790521F63D1B009A6453 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		F3EA790621F63D50009A6453 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA78E421F61E2F009A6453 /* AppDelegate.swift */,
+				F3EA78ED21F61E30009A6453 /* LaunchScreen.storyboard */,
+				F3EA78E821F61E2F009A6453 /* Main.storyboard */,
+				F3EA78E621F61E2F009A6453 /* ViewController.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		F3EA790721F63E56009A6453 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA78F021F61E30009A6453 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F3EA790821F64034009A6453 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA78EB21F61E30009A6453 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,7 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPZC96H3B4;
-				INFOPLIST_FILE = Seek4Track/Info.plist;
+				INFOPLIST_FILE = Seek4Track/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,7 +530,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPZC96H3B4;
-				INFOPLIST_FILE = Seek4Track/Info.plist;
+				INFOPLIST_FILE = Seek4Track/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

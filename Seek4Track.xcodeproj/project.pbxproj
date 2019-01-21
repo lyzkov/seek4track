@@ -10,11 +10,13 @@
 		734B42592B36F627DA2413C0 /* Pods_Seek4Track.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB943376A0E1C19F8E0DBB21 /* Pods_Seek4Track.framework */; };
 		B5BE99C8F4D79EDFF4F05655 /* Pods_Seek4TrackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7304454ECDB5E953FCF59ED5 /* Pods_Seek4TrackTests.framework */; };
 		F3EA78E521F61E2F009A6453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA78E421F61E2F009A6453 /* AppDelegate.swift */; };
-		F3EA78E721F61E2F009A6453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA78E621F61E2F009A6453 /* ViewController.swift */; };
-		F3EA78EA21F61E2F009A6453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EA78E821F61E2F009A6453 /* Main.storyboard */; };
 		F3EA78EC21F61E30009A6453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3EA78EB21F61E30009A6453 /* Assets.xcassets */; };
 		F3EA78EF21F61E30009A6453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EA78ED21F61E30009A6453 /* LaunchScreen.storyboard */; };
 		F3EA78FA21F61E30009A6453 /* Seek4TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA78F921F61E30009A6453 /* Seek4TrackTests.swift */; };
+		F3EA790D21F64AB4009A6453 /* Tracks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EA790C21F64AB4009A6453 /* Tracks.storyboard */; };
+		F3EA790F21F65A13009A6453 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA790E21F65A13009A6453 /* SearchViewController.swift */; };
+		F3EA791221F65ABB009A6453 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791121F65ABB009A6453 /* TrackTableViewCell.swift */; };
+		F3EA791621F65ED4009A6453 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791521F65ED4009A6453 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +38,16 @@
 		DB943376A0E1C19F8E0DBB21 /* Pods_Seek4Track.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seek4Track.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EA78E121F61E2F009A6453 /* Seek4Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seek4Track.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EA78E421F61E2F009A6453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3EA78E621F61E2F009A6453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F3EA78E921F61E2F009A6453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3EA78EB21F61E30009A6453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3EA78EE21F61E30009A6453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3EA78F021F61E30009A6453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3EA78F521F61E30009A6453 /* Seek4TrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Seek4TrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EA78F921F61E30009A6453 /* Seek4TrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seek4TrackTests.swift; sourceTree = "<group>"; };
 		F3EA78FB21F61E30009A6453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3EA790C21F64AB4009A6453 /* Tracks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tracks.storyboard; sourceTree = "<group>"; };
+		F3EA790E21F65A13009A6453 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F3EA791121F65ABB009A6453 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		F3EA791521F65ED4009A6453 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		F3EA790521F63D1B009A6453 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				F3EA790921F64A17009A6453 /* Tracks */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -144,10 +149,9 @@
 		F3EA790621F63D50009A6453 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				F3EA791421F65E5B009A6453 /* Generated */,
 				F3EA78E421F61E2F009A6453 /* AppDelegate.swift */,
 				F3EA78ED21F61E30009A6453 /* LaunchScreen.storyboard */,
-				F3EA78E821F61E2F009A6453 /* Main.storyboard */,
-				F3EA78E621F61E2F009A6453 /* ViewController.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -168,6 +172,32 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		F3EA790921F64A17009A6453 /* Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA790A21F64A3A009A6453 /* SearchScreen */,
+				F3EA790C21F64AB4009A6453 /* Tracks.storyboard */,
+			);
+			path = Tracks;
+			sourceTree = "<group>";
+		};
+		F3EA790A21F64A3A009A6453 /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA790E21F65A13009A6453 /* SearchViewController.swift */,
+				F3EA791121F65ABB009A6453 /* TrackTableViewCell.swift */,
+			);
+			path = SearchScreen;
+			sourceTree = "<group>";
+		};
+		F3EA791421F65E5B009A6453 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA791521F65ED4009A6453 /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +206,7 @@
 			buildConfigurationList = F3EA78FE21F61E30009A6453 /* Build configuration list for PBXNativeTarget "Seek4Track" */;
 			buildPhases = (
 				2316A71252DFC16DCD0AEC6A /* [CP] Check Pods Manifest.lock */,
+				F3EA791321F65DF5009A6453 /* R.swift */,
 				F3EA78DD21F61E2F009A6453 /* Sources */,
 				F3EA78DE21F61E2F009A6453 /* Frameworks */,
 				F3EA78DF21F61E2F009A6453 /* Resources */,
@@ -252,9 +283,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EA790D21F64AB4009A6453 /* Tracks.storyboard in Resources */,
 				F3EA78EF21F61E30009A6453 /* LaunchScreen.storyboard in Resources */,
 				F3EA78EC21F61E30009A6453 /* Assets.xcassets in Resources */,
-				F3EA78EA21F61E2F009A6453 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +308,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Seek4Track/Pods-Seek4Track-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -285,6 +317,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -338,6 +371,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F3EA791321F65DF5009A6453 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Seek4Track/Misc/Generated/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Seek4Track/Misc/Generated/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -345,8 +398,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3EA78E721F61E2F009A6453 /* ViewController.swift in Sources */,
+				F3EA790F21F65A13009A6453 /* SearchViewController.swift in Sources */,
+				F3EA791621F65ED4009A6453 /* R.generated.swift in Sources */,
 				F3EA78E521F61E2F009A6453 /* AppDelegate.swift in Sources */,
+				F3EA791221F65ABB009A6453 /* TrackTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,14 +424,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F3EA78E821F61E2F009A6453 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3EA78E921F61E2F009A6453 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F3EA78ED21F61E30009A6453 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

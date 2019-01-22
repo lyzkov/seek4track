@@ -16,15 +16,17 @@ final class SearchTrackViewController: UIViewController {
 
     private let disposeBag = DisposeBag()
 
+    private let cyclone = SearchTrackCyclone()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let tracks = Observable<[SearchTrackItem]>.just([
-            .init(description: "George Michael - Careless Whisper", sourceIcon: UIImage()),
-            .init(description: "Celine Dion - All By Myself", sourceIcon: UIImage()),
-        ])
+        bind()
+        cyclone.load.execute(())
+    }
 
-        tracks
+    private func bind() {
+        cyclone.output[\.tracks]
             .bind(to: tableView.rx.items(
                 cellIdentifier: R.reuseIdentifier.searchTrack.identifier,
                 cellType: SearchTrackCell.self)) { _, track, cell in

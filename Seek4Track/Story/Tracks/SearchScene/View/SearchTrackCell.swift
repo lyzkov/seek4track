@@ -11,7 +11,6 @@ import UIKit
 final class SearchTrackCell: UITableViewCell {
 
     @IBOutlet weak var trackDescription: UILabel!
-
     @IBOutlet weak var sourceIcon: UIImageView!
 
 }

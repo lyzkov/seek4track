@@ -8,6 +8,8 @@ target 'Seek4Track' do
   # Pods for Seek4Track
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxFeedback'
+  pod 'Action'
   pod 'R.swift'
 
   target 'Seek4TrackTests' do

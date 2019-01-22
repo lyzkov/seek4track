@@ -18,6 +18,11 @@
 		F3EA791221F65ABB009A6453 /* SearchTrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791121F65ABB009A6453 /* SearchTrackCell.swift */; };
 		F3EA791621F65ED4009A6453 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791521F65ED4009A6453 /* R.generated.swift */; };
 		F3EA791921F72C78009A6453 /* SearchTrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791821F72C78009A6453 /* SearchTrackItem.swift */; };
+		F3EA791C21F73BF7009A6453 /* SearchTrackCyclone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791B21F73BF7009A6453 /* SearchTrackCyclone.swift */; };
+		F3EA791F21F73CC2009A6453 /* Cyclone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791E21F73CC2009A6453 /* Cyclone.swift */; };
+		F3EA792121F73D8F009A6453 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA792021F73D8F009A6453 /* Event.swift */; };
+		F3EA792321F73DFC009A6453 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA792221F73DFC009A6453 /* State.swift */; };
+		F3EA792921F7D361009A6453 /* Mutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA792821F7D361009A6453 /* Mutable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		F3EA791121F65ABB009A6453 /* SearchTrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTrackCell.swift; sourceTree = "<group>"; };
 		F3EA791521F65ED4009A6453 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		F3EA791821F72C78009A6453 /* SearchTrackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTrackItem.swift; sourceTree = "<group>"; };
+		F3EA791B21F73BF7009A6453 /* SearchTrackCyclone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTrackCyclone.swift; sourceTree = "<group>"; };
+		F3EA791E21F73CC2009A6453 /* Cyclone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cyclone.swift; sourceTree = "<group>"; };
+		F3EA792021F73D8F009A6453 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F3EA792221F73DFC009A6453 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		F3EA792821F7D361009A6453 /* Mutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mutable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,8 @@
 		F3EA790421F63CE1009A6453 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F3EA792721F7D353009A6453 /* Mutable */,
+				F3EA791D21F73C0E009A6453 /* Cyclone */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -187,8 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				F3EA791721F72B93009A6453 /* Model */,
-				F3EA790E21F65A13009A6453 /* SearchTrackViewController.swift */,
-				F3EA791121F65ABB009A6453 /* SearchTrackCell.swift */,
+				F3EA791A21F73BCC009A6453 /* View */,
+				F3EA791B21F73BF7009A6453 /* SearchTrackCyclone.swift */,
 			);
 			path = SearchScene;
 			sourceTree = "<group>";
@@ -207,6 +219,33 @@
 				F3EA791821F72C78009A6453 /* SearchTrackItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F3EA791A21F73BCC009A6453 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA790E21F65A13009A6453 /* SearchTrackViewController.swift */,
+				F3EA791121F65ABB009A6453 /* SearchTrackCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3EA791D21F73C0E009A6453 /* Cyclone */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA791E21F73CC2009A6453 /* Cyclone.swift */,
+				F3EA792021F73D8F009A6453 /* Event.swift */,
+				F3EA792221F73DFC009A6453 /* State.swift */,
+			);
+			path = Cyclone;
+			sourceTree = "<group>";
+		};
+		F3EA792721F7D353009A6453 /* Mutable */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA792821F7D361009A6453 /* Mutable.swift */,
+			);
+			path = Mutable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,18 +358,22 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Seek4Track/Pods-Seek4Track-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxFeedback/RxFeedback.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFeedback.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,11 +452,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EA792121F73D8F009A6453 /* Event.swift in Sources */,
 				F3EA791921F72C78009A6453 /* SearchTrackItem.swift in Sources */,
 				F3EA790F21F65A13009A6453 /* SearchTrackViewController.swift in Sources */,
 				F3EA791621F65ED4009A6453 /* R.generated.swift in Sources */,
+				F3EA792921F7D361009A6453 /* Mutable.swift in Sources */,
 				F3EA78E521F61E2F009A6453 /* AppDelegate.swift in Sources */,
+				F3EA792321F73DFC009A6453 /* State.swift in Sources */,
 				F3EA791221F65ABB009A6453 /* SearchTrackCell.swift in Sources */,
+				F3EA791C21F73BF7009A6453 /* SearchTrackCyclone.swift in Sources */,
+				F3EA791F21F73CC2009A6453 /* Cyclone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

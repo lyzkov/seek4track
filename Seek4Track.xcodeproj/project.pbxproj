@@ -14,9 +14,10 @@
 		F3EA78EF21F61E30009A6453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EA78ED21F61E30009A6453 /* LaunchScreen.storyboard */; };
 		F3EA78FA21F61E30009A6453 /* Seek4TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA78F921F61E30009A6453 /* Seek4TrackTests.swift */; };
 		F3EA790D21F64AB4009A6453 /* Tracks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EA790C21F64AB4009A6453 /* Tracks.storyboard */; };
-		F3EA790F21F65A13009A6453 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA790E21F65A13009A6453 /* SearchViewController.swift */; };
-		F3EA791221F65ABB009A6453 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791121F65ABB009A6453 /* TrackTableViewCell.swift */; };
+		F3EA790F21F65A13009A6453 /* SearchTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA790E21F65A13009A6453 /* SearchTrackViewController.swift */; };
+		F3EA791221F65ABB009A6453 /* SearchTrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791121F65ABB009A6453 /* SearchTrackCell.swift */; };
 		F3EA791621F65ED4009A6453 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791521F65ED4009A6453 /* R.generated.swift */; };
+		F3EA791921F72C78009A6453 /* SearchTrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791821F72C78009A6453 /* SearchTrackItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +46,10 @@
 		F3EA78F921F61E30009A6453 /* Seek4TrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seek4TrackTests.swift; sourceTree = "<group>"; };
 		F3EA78FB21F61E30009A6453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3EA790C21F64AB4009A6453 /* Tracks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tracks.storyboard; sourceTree = "<group>"; };
-		F3EA790E21F65A13009A6453 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		F3EA791121F65ABB009A6453 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		F3EA790E21F65A13009A6453 /* SearchTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTrackViewController.swift; sourceTree = "<group>"; };
+		F3EA791121F65ABB009A6453 /* SearchTrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTrackCell.swift; sourceTree = "<group>"; };
 		F3EA791521F65ED4009A6453 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		F3EA791821F72C78009A6453 /* SearchTrackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTrackItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +119,7 @@
 				F3EA790421F63CE1009A6453 /* Common */,
 				F3EA790621F63D50009A6453 /* Misc */,
 				F3EA790821F64034009A6453 /* Resource */,
-				F3EA790521F63D1B009A6453 /* Scene */,
+				F3EA790521F63D1B009A6453 /* Story */,
 			);
 			path = Seek4Track;
 			sourceTree = "<group>";
@@ -138,12 +140,12 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		F3EA790521F63D1B009A6453 /* Scene */ = {
+		F3EA790521F63D1B009A6453 /* Story */ = {
 			isa = PBXGroup;
 			children = (
 				F3EA790921F64A17009A6453 /* Tracks */,
 			);
-			path = Scene;
+			path = Story;
 			sourceTree = "<group>";
 		};
 		F3EA790621F63D50009A6453 /* Misc */ = {
@@ -175,19 +177,20 @@
 		F3EA790921F64A17009A6453 /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
-				F3EA790A21F64A3A009A6453 /* SearchScreen */,
+				F3EA790A21F64A3A009A6453 /* SearchScene */,
 				F3EA790C21F64AB4009A6453 /* Tracks.storyboard */,
 			);
 			path = Tracks;
 			sourceTree = "<group>";
 		};
-		F3EA790A21F64A3A009A6453 /* SearchScreen */ = {
+		F3EA790A21F64A3A009A6453 /* SearchScene */ = {
 			isa = PBXGroup;
 			children = (
-				F3EA790E21F65A13009A6453 /* SearchViewController.swift */,
-				F3EA791121F65ABB009A6453 /* TrackTableViewCell.swift */,
+				F3EA791721F72B93009A6453 /* Model */,
+				F3EA790E21F65A13009A6453 /* SearchTrackViewController.swift */,
+				F3EA791121F65ABB009A6453 /* SearchTrackCell.swift */,
 			);
-			path = SearchScreen;
+			path = SearchScene;
 			sourceTree = "<group>";
 		};
 		F3EA791421F65E5B009A6453 /* Generated */ = {
@@ -196,6 +199,14 @@
 				F3EA791521F65ED4009A6453 /* R.generated.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		F3EA791721F72B93009A6453 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA791821F72C78009A6453 /* SearchTrackItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,10 +409,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3EA790F21F65A13009A6453 /* SearchViewController.swift in Sources */,
+				F3EA791921F72C78009A6453 /* SearchTrackItem.swift in Sources */,
+				F3EA790F21F65A13009A6453 /* SearchTrackViewController.swift in Sources */,
 				F3EA791621F65ED4009A6453 /* R.generated.swift in Sources */,
 				F3EA78E521F61E2F009A6453 /* AppDelegate.swift in Sources */,
-				F3EA791221F65ABB009A6453 /* TrackTableViewCell.swift in Sources */,
+				F3EA791221F65ABB009A6453 /* SearchTrackCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

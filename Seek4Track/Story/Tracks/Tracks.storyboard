@@ -13,7 +13,7 @@
         <!--Search-->
         <scene sceneID="Qjt-ji-j4v">
             <objects>
-                <viewController title="Search" id="M3I-NS-y5G" customClass="SearchTrackViewController" customModule="Seek4Track" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Search" id="M3I-NS-y5G" customClass="SearchTracksViewController" customModule="Seek4Track" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UHz-Hb-Iia">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchTrack" rowHeight="66" id="Vlg-pX-UCR" customClass="SearchTrackCell" customModule="Seek4Track" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchTrack" rowHeight="66" id="Vlg-pX-UCR" customClass="SearchTracksCell" customModule="Seek4Track" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vlg-pX-UCR" id="KIH-MV-D9A">

@@ -10,11 +10,11 @@ import Foundation
 import RxSwift
 import Action
 
-protocol Event { }
+protocol EventType { }
 
-typealias EventAction<E: Event> = Action<Void, E>
+typealias EventAction<Event: EventType> = Action<Void, Event>
 
-extension ObservableConvertibleType where E: Event {
+extension ObservableConvertibleType where E: EventType {
 
     func asAction() -> EventAction<E> {
         let observable = asObservable()
@@ -28,7 +28,7 @@ extension ObservableConvertibleType where E: Event {
 
 extension ObservableConvertibleType {
 
-    func asAction<R: Event>(_ eventMap: @escaping (E) -> R) -> EventAction<R> {
+    func asAction<Event: EventType>(_ eventMap: @escaping (E) -> Event) -> EventAction<Event> {
         return asObservable().map(eventMap).asAction()
     }
 

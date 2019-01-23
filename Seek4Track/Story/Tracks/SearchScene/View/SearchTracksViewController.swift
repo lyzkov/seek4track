@@ -10,13 +10,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class SearchTrackViewController: UIViewController {
+final class SearchTracksViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
     private let disposeBag = DisposeBag()
 
-    private let cyclone = SearchTrackCyclone()
+    private let cyclone = SearchTracksCyclone()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ final class SearchTrackViewController: UIViewController {
         cyclone.output[\.tracks]
             .bind(to: tableView.rx.items(
                 cellIdentifier: R.reuseIdentifier.searchTrack.identifier,
-                cellType: SearchTrackCell.self)) { _, track, cell in
+                cellType: SearchTracksCell.self)) { _, track, cell in
                 cell.trackDescription.text = track.description
             }
             .disposed(by: disposeBag)

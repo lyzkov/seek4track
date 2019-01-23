@@ -12,10 +12,12 @@ import RxFeedback
 
 protocol Cyclone {
     associatedtype State: ReducibleState
-    typealias Event = State.E
+    typealias Event = State.Event
 
     func state(from events: Observable<Event>) -> Observable<State>
     func state(from actions: EventAction<Event>...) -> Observable<State>
+
+    var output: Observable<State> { get }
 }
 
 extension Cyclone {

@@ -10,15 +10,15 @@ import Foundation
 import RxSwift
 
 protocol ReducibleState {
-    associatedtype E: Event
+    associatedtype Event: EventType
 
     static var initial: Self { get }
-    static func reduce(state: Self, _ event: E) -> Self
+    static func reduce(state: Self, _ event: Event) -> Self
 }
 
 extension ObservableConvertibleType where E: ReducibleState {
 
-    subscript<V>(_ keyPath: KeyPath<E, V>) -> Observable<V> {
+    subscript<Value>(_ keyPath: KeyPath<E, Value>) -> Observable<Value> {
         return asObservable().map { $0[keyPath: keyPath] }
     }
 

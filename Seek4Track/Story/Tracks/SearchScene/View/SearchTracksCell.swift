@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SearchTrackCell: UITableViewCell {
+final class SearchTracksCell: UITableViewCell {
 
     @IBOutlet weak var trackDescription: UILabel!
     @IBOutlet weak var sourceIcon: UIImageView!

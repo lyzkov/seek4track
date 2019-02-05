@@ -14,11 +14,11 @@
 		F3EA78EF21F61E30009A6453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EA78ED21F61E30009A6453 /* LaunchScreen.storyboard */; };
 		F3EA78FA21F61E30009A6453 /* Seek4TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA78F921F61E30009A6453 /* Seek4TrackTests.swift */; };
 		F3EA790D21F64AB4009A6453 /* Tracks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EA790C21F64AB4009A6453 /* Tracks.storyboard */; };
-		F3EA790F21F65A13009A6453 /* SearchTracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA790E21F65A13009A6453 /* SearchTracksViewController.swift */; };
-		F3EA791221F65ABB009A6453 /* SearchTracksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791121F65ABB009A6453 /* SearchTracksCell.swift */; };
+		F3EA790F21F65A13009A6453 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA790E21F65A13009A6453 /* SearchViewController.swift */; };
+		F3EA791221F65ABB009A6453 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791121F65ABB009A6453 /* SearchCell.swift */; };
 		F3EA791621F65ED4009A6453 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791521F65ED4009A6453 /* R.generated.swift */; };
-		F3EA791921F72C78009A6453 /* SearchTrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791821F72C78009A6453 /* SearchTrackItem.swift */; };
-		F3EA791C21F73BF7009A6453 /* SearchTracksCyclone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791B21F73BF7009A6453 /* SearchTracksCyclone.swift */; };
+		F3EA791921F72C78009A6453 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791821F72C78009A6453 /* SearchItem.swift */; };
+		F3EA791C21F73BF7009A6453 /* SearchCyclone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791B21F73BF7009A6453 /* SearchCyclone.swift */; };
 		F3EA791F21F73CC2009A6453 /* Cyclone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA791E21F73CC2009A6453 /* Cyclone.swift */; };
 		F3EA792121F73D8F009A6453 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA792021F73D8F009A6453 /* Event.swift */; };
 		F3EA792321F73DFC009A6453 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA792221F73DFC009A6453 /* State.swift */; };
@@ -51,11 +51,11 @@
 		F3EA78F921F61E30009A6453 /* Seek4TrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seek4TrackTests.swift; sourceTree = "<group>"; };
 		F3EA78FB21F61E30009A6453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3EA790C21F64AB4009A6453 /* Tracks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tracks.storyboard; sourceTree = "<group>"; };
-		F3EA790E21F65A13009A6453 /* SearchTracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTracksViewController.swift; sourceTree = "<group>"; };
-		F3EA791121F65ABB009A6453 /* SearchTracksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTracksCell.swift; sourceTree = "<group>"; };
+		F3EA790E21F65A13009A6453 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F3EA791121F65ABB009A6453 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		F3EA791521F65ED4009A6453 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		F3EA791821F72C78009A6453 /* SearchTrackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTrackItem.swift; sourceTree = "<group>"; };
-		F3EA791B21F73BF7009A6453 /* SearchTracksCyclone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTracksCyclone.swift; sourceTree = "<group>"; };
+		F3EA791821F72C78009A6453 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		F3EA791B21F73BF7009A6453 /* SearchCyclone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCyclone.swift; sourceTree = "<group>"; };
 		F3EA791E21F73CC2009A6453 /* Cyclone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cyclone.swift; sourceTree = "<group>"; };
 		F3EA792021F73D8F009A6453 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F3EA792221F73DFC009A6453 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
@@ -189,20 +189,20 @@
 		F3EA790921F64A17009A6453 /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
-				F3EA790A21F64A3A009A6453 /* SearchScene */,
+				F3EA790A21F64A3A009A6453 /* Search */,
 				F3EA790C21F64AB4009A6453 /* Tracks.storyboard */,
 			);
 			path = Tracks;
 			sourceTree = "<group>";
 		};
-		F3EA790A21F64A3A009A6453 /* SearchScene */ = {
+		F3EA790A21F64A3A009A6453 /* Search */ = {
 			isa = PBXGroup;
 			children = (
 				F3EA791721F72B93009A6453 /* Model */,
 				F3EA791A21F73BCC009A6453 /* View */,
-				F3EA791B21F73BF7009A6453 /* SearchTracksCyclone.swift */,
+				F3EA791B21F73BF7009A6453 /* SearchCyclone.swift */,
 			);
-			path = SearchScene;
+			path = Search;
 			sourceTree = "<group>";
 		};
 		F3EA791421F65E5B009A6453 /* Generated */ = {
@@ -216,7 +216,7 @@
 		F3EA791721F72B93009A6453 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F3EA791821F72C78009A6453 /* SearchTrackItem.swift */,
+				F3EA791821F72C78009A6453 /* SearchItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,8 +224,8 @@
 		F3EA791A21F73BCC009A6453 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F3EA790E21F65A13009A6453 /* SearchTracksViewController.swift */,
-				F3EA791121F65ABB009A6453 /* SearchTracksCell.swift */,
+				F3EA790E21F65A13009A6453 /* SearchViewController.swift */,
+				F3EA791121F65ABB009A6453 /* SearchCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -453,14 +453,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3EA792121F73D8F009A6453 /* Event.swift in Sources */,
-				F3EA791921F72C78009A6453 /* SearchTrackItem.swift in Sources */,
-				F3EA790F21F65A13009A6453 /* SearchTracksViewController.swift in Sources */,
+				F3EA791921F72C78009A6453 /* SearchItem.swift in Sources */,
+				F3EA790F21F65A13009A6453 /* SearchViewController.swift in Sources */,
 				F3EA791621F65ED4009A6453 /* R.generated.swift in Sources */,
 				F3EA792921F7D361009A6453 /* Mutable.swift in Sources */,
 				F3EA78E521F61E2F009A6453 /* AppDelegate.swift in Sources */,
 				F3EA792321F73DFC009A6453 /* State.swift in Sources */,
-				F3EA791221F65ABB009A6453 /* SearchTracksCell.swift in Sources */,
-				F3EA791C21F73BF7009A6453 /* SearchTracksCyclone.swift in Sources */,
+				F3EA791221F65ABB009A6453 /* SearchCell.swift in Sources */,
+				F3EA791C21F73BF7009A6453 /* SearchCyclone.swift in Sources */,
 				F3EA791F21F73CC2009A6453 /* Cyclone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  SearchTrackCyclone.swift
+//  SearchCyclone.swift
 //  Seek4Track
 //
 //  Created by lyzkov on 22/01/2019.
@@ -9,18 +9,18 @@
 import Foundation
 import RxSwift
 
-let tracks: [SearchTrackItem] = [
+let tracks: [SearchItem] = [
     .init(description: "George Michael - Careless Whisper", sourceIcon: UIImage()),
     .init(description: "Celine Dion - All By Myself", sourceIcon: UIImage()),
 ]
 
-final class SearchTracksCyclone: Cyclone {
+final class SearchCyclone: Cyclone {
     struct State: ReducibleState {
         enum Event: EventType {
-            case load(tracks: [SearchTrackItem])
+            case load(tracks: [SearchItem])
         }
 
-        var tracks: [SearchTrackItem]
+        var tracks: [SearchItem]
 
         static var initial = State(tracks: [])
 

@@ -1,5 +1,5 @@
 //
-//  TrackSearchItem.swift
+//  SearchItem.swift
 //  Seek4Track
 //
 //  Created by lyzkov on 22/01/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct SearchTrackItem {
+struct SearchItem {
     let description: String
     let sourceIcon: UIImage
 }

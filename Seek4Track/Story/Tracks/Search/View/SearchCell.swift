@@ -1,5 +1,5 @@
 //
-//  TrackTableViewCell.swift
+//  SearchCell.swift
 //  Seek4Track
 //
 //  Created by lyzkov on 21/01/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SearchTracksCell: UITableViewCell {
+final class SearchCell: UITableViewCell {
 
     @IBOutlet weak var trackDescription: UILabel!
     @IBOutlet weak var sourceIcon: UIImageView!

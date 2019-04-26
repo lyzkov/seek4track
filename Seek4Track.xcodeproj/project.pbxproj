@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		734B42592B36F627DA2413C0 /* Pods_Seek4Track.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB943376A0E1C19F8E0DBB21 /* Pods_Seek4Track.framework */; };
 		B5BE99C8F4D79EDFF4F05655 /* Pods_Seek4TrackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7304454ECDB5E953FCF59ED5 /* Pods_Seek4TrackTests.framework */; };
+		F34515A722384E3C00D7571C /* Liquefiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34515A622384E3C00D7571C /* Liquefiable.swift */; };
+		F34515A922384E6800D7571C /* LastfmAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34515A822384E6800D7571C /* LastfmAPI.swift */; };
+		F34515AB22384EBF00D7571C /* LastfmEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34515AA22384EBF00D7571C /* LastfmEndpoint.swift */; };
+		F34515AD22384EFC00D7571C /* LastfmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34515AC22384EFC00D7571C /* LastfmModel.swift */; };
+		F34515AF2238521C00D7571C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34515AE2238521C00D7571C /* SessionManager.swift */; };
+		F397DFED220A225D00633BBB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DFEC220A225D00633BBB /* Endpoint.swift */; };
+		F397DFEF220A22DA00633BBB /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DFEE220A22DA00633BBB /* RestAPI.swift */; };
+		F397DFF1220A232300633BBB /* Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DFF0220A232300633BBB /* Decode.swift */; };
+		F397DFF4220A29A700633BBB /* TracksPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DFF3220A29A700633BBB /* TracksPool.swift */; };
+		F3CE782D223C26450076480A /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE782C223C26450076480A /* HTTPHeaders.swift */; };
 		F3EA78E521F61E2F009A6453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA78E421F61E2F009A6453 /* AppDelegate.swift */; };
 		F3EA78EC21F61E30009A6453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3EA78EB21F61E30009A6453 /* Assets.xcassets */; };
 		F3EA78EF21F61E30009A6453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EA78ED21F61E30009A6453 /* LaunchScreen.storyboard */; };
@@ -42,6 +52,16 @@
 		D535F1A53740C4B6A5CA31B3 /* Pods-Seek4Track.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seek4Track.debug.xcconfig"; path = "Target Support Files/Pods-Seek4Track/Pods-Seek4Track.debug.xcconfig"; sourceTree = "<group>"; };
 		DA3626FECFE23834338B8DB1 /* Pods-Seek4TrackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seek4TrackTests.debug.xcconfig"; path = "Target Support Files/Pods-Seek4TrackTests/Pods-Seek4TrackTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB943376A0E1C19F8E0DBB21 /* Pods_Seek4Track.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seek4Track.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34515A622384E3C00D7571C /* Liquefiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Liquefiable.swift; sourceTree = "<group>"; };
+		F34515A822384E6800D7571C /* LastfmAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastfmAPI.swift; sourceTree = "<group>"; };
+		F34515AA22384EBF00D7571C /* LastfmEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastfmEndpoint.swift; sourceTree = "<group>"; };
+		F34515AC22384EFC00D7571C /* LastfmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastfmModel.swift; sourceTree = "<group>"; };
+		F34515AE2238521C00D7571C /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		F397DFEC220A225D00633BBB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		F397DFEE220A22DA00633BBB /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
+		F397DFF0220A232300633BBB /* Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decode.swift; sourceTree = "<group>"; };
+		F397DFF3220A29A700633BBB /* TracksPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksPool.swift; sourceTree = "<group>"; };
+		F3CE782C223C26450076480A /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
 		F3EA78E121F61E2F009A6453 /* Seek4Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seek4Track.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EA78E421F61E2F009A6453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3EA78EB21F61E30009A6453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +122,37 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F397DFEA220A20EA00633BBB /* RESTorm */ = {
+			isa = PBXGroup;
+			children = (
+				F397DFEE220A22DA00633BBB /* RestAPI.swift */,
+				F397DFF0220A232300633BBB /* Decode.swift */,
+				F397DFEC220A225D00633BBB /* Endpoint.swift */,
+				F3CE782C223C26450076480A /* HTTPHeaders.swift */,
+				F34515A622384E3C00D7571C /* Liquefiable.swift */,
+				F34515AE2238521C00D7571C /* SessionManager.swift */,
+			);
+			path = RESTorm;
+			sourceTree = "<group>";
+		};
+		F397DFF2220A294A00633BBB /* DataPool */ = {
+			isa = PBXGroup;
+			children = (
+				F397DFF3220A29A700633BBB /* TracksPool.swift */,
+			);
+			path = DataPool;
+			sourceTree = "<group>";
+		};
+		F3D4EEAE2237F96F000E2607 /* Lastfm */ = {
+			isa = PBXGroup;
+			children = (
+				F34515A822384E6800D7571C /* LastfmAPI.swift */,
+				F34515AA22384EBF00D7571C /* LastfmEndpoint.swift */,
+				F34515AC22384EFC00D7571C /* LastfmModel.swift */,
+			);
+			path = Lastfm;
+			sourceTree = "<group>";
+		};
 		F3EA78D821F61E2E009A6453 = {
 			isa = PBXGroup;
 			children = (
@@ -146,8 +197,10 @@
 		F3EA790421F63CE1009A6453 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F3D4EEAE2237F96F000E2607 /* Lastfm */,
+				F397DFEA220A20EA00633BBB /* RESTorm */,
 				F3EA792721F7D353009A6453 /* Mutable */,
-				F3EA791D21F73C0E009A6453 /* Cyclone */,
+				F3EA791D21F73C0E009A6453 /* Cyclones */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -189,6 +242,7 @@
 		F3EA790921F64A17009A6453 /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				F397DFF2220A294A00633BBB /* DataPool */,
 				F3EA790A21F64A3A009A6453 /* Search */,
 				F3EA790C21F64AB4009A6453 /* Tracks.storyboard */,
 			);
@@ -230,14 +284,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F3EA791D21F73C0E009A6453 /* Cyclone */ = {
+		F3EA791D21F73C0E009A6453 /* Cyclones */ = {
 			isa = PBXGroup;
 			children = (
 				F3EA791E21F73CC2009A6453 /* Cyclone.swift */,
 				F3EA792021F73D8F009A6453 /* Event.swift */,
 				F3EA792221F73DFC009A6453 /* State.swift */,
 			);
-			path = Cyclone;
+			path = Cyclones;
 			sourceTree = "<group>";
 		};
 		F3EA792721F7D353009A6453 /* Mutable */ = {
@@ -302,9 +356,11 @@
 				TargetAttributes = {
 					F3EA78E021F61E2F009A6453 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					F3EA78F421F61E30009A6453 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = F3EA78E021F61E2F009A6453;
 					};
 				};
@@ -359,8 +415,9 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Seek4Track/Pods-Seek4Track-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxFeedback/RxFeedback.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -370,8 +427,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFeedback.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -439,7 +497,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/Seek4Track/Misc/Generated/R.generated.swift,
+				"$SRCROOT/Seek4Track/Misc/Generated/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -452,16 +510,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CE782D223C26450076480A /* HTTPHeaders.swift in Sources */,
 				F3EA792121F73D8F009A6453 /* Event.swift in Sources */,
+				F34515A722384E3C00D7571C /* Liquefiable.swift in Sources */,
 				F3EA791921F72C78009A6453 /* SearchItem.swift in Sources */,
+				F34515AF2238521C00D7571C /* SessionManager.swift in Sources */,
 				F3EA790F21F65A13009A6453 /* SearchViewController.swift in Sources */,
 				F3EA791621F65ED4009A6453 /* R.generated.swift in Sources */,
 				F3EA792921F7D361009A6453 /* Mutable.swift in Sources */,
+				F34515A922384E6800D7571C /* LastfmAPI.swift in Sources */,
 				F3EA78E521F61E2F009A6453 /* AppDelegate.swift in Sources */,
 				F3EA792321F73DFC009A6453 /* State.swift in Sources */,
+				F34515AD22384EFC00D7571C /* LastfmModel.swift in Sources */,
 				F3EA791221F65ABB009A6453 /* SearchCell.swift in Sources */,
 				F3EA791C21F73BF7009A6453 /* SearchCyclone.swift in Sources */,
+				F397DFED220A225D00633BBB /* Endpoint.swift in Sources */,
+				F397DFEF220A22DA00633BBB /* RestAPI.swift in Sources */,
 				F3EA791F21F73CC2009A6453 /* Cyclone.swift in Sources */,
+				F397DFF1220A232300633BBB /* Decode.swift in Sources */,
+				F34515AB22384EBF00D7571C /* LastfmEndpoint.swift in Sources */,
+				F397DFF4220A29A700633BBB /* TracksPool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,7 +693,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyzkov.Seek4Track;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -644,7 +712,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyzkov.Seek4Track;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -665,7 +733,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyzkov.Seek4TrackTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seek4Track.app/Seek4Track";
 			};
@@ -687,7 +755,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyzkov.Seek4TrackTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seek4Track.app/Seek4Track";
 			};

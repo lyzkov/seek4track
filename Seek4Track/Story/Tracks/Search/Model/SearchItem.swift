@@ -12,3 +12,11 @@ struct SearchItem {
     let description: String
     let sourceIcon: UIImage
 }
+
+extension SearchItem {
+
+    init(from track: Track) {
+        self.init(description: "\(track.artist) - \(track.name)", sourceIcon: UIImage())
+    }
+
+}

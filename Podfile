@@ -11,6 +11,8 @@ target 'Seek4Track' do
   pod 'RxFeedback'
   pod 'Action'
   pod 'R.swift'
+  pod 'Alamofire'
+  pod 'RxAlamofire'
 
   target 'Seek4TrackTests' do
     inherit! :search_paths

@@ -28,9 +28,9 @@ extension Cyclone {
                 initialState: State.initial,
                 reduce: State.reduce,
                 scheduler: MainScheduler.instance,
-                scheduledFeedback: { _ in events }
+                feedback: { _ in events }
             )
-            .share(replay: 1, scope: .whileConnected)
+            .share(replay: 1)
     }
 
     func state(from actions: EventAction<Event>...) -> Observable<State> {

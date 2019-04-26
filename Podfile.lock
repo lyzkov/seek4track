@@ -1,22 +1,28 @@
 PODS:
-  - Action (3.9.1):
-    - RxCocoa (~> 4.3)
-    - RxSwift (~> 4.3)
-  - R.swift (5.0.0):
-    - R.swift.Library (~> 5.0.0)
-  - R.swift.Library (5.0.0)
-  - RxAtomic (4.4.0)
-  - RxCocoa (4.4.0):
-    - RxSwift (~> 4.0)
-  - RxFeedback (1.1.1):
+  - Action (3.11.0):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxSwift (4.4.0):
-    - RxAtomic (~> 4.4)
+  - Alamofire (4.8.2)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+  - RxAlamofire (4.4.1):
+    - RxAlamofire/Core (= 4.4.1)
+  - RxAlamofire/Core (4.4.1):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 4.5)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxFeedback (2.0.0):
+    - RxCocoa (~> 4.4)
+    - RxSwift (~> 4.4)
+  - RxSwift (4.5.0)
 
 DEPENDENCIES:
   - Action
+  - Alamofire
   - R.swift
+  - RxAlamofire
   - RxCocoa
   - RxFeedback
   - RxSwift
@@ -24,22 +30,24 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Action
+    - Alamofire
     - R.swift
     - R.swift.Library
-    - RxAtomic
+    - RxAlamofire
     - RxCocoa
     - RxFeedback
     - RxSwift
 
 SPEC CHECKSUMS:
-  Action: 2f461c203c480b17aa99b3bb166e4329ecff6908
-  R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
-  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
-  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
-  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
-  RxFeedback: 640e317bc7f6c4914c39a2063c6d5c0e6c1aa65d
-  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  Action: 689181e4c3f6566844178d8a7da6fef39a9597fc
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  RxAlamofire: ed65f451f5a9a59419b0b9e705043dc01410edd9
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxFeedback: 49bb931caf6d05e315d5b5366c0991ad1474ea36
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: d024a6a5d6fc4e0f0ea3a93df0ddec9d3370fab7
+PODFILE CHECKSUM: e538939e88c54587253659f092b3421aa50b4814
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.6.0

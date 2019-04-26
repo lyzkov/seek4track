@@ -9,15 +9,11 @@
 import Foundation
 import RxSwift
 
-let tracks: [SearchItem] = [
-    .init(description: "George Michael - Careless Whisper", sourceIcon: UIImage()),
-    .init(description: "Celine Dion - All By Myself", sourceIcon: UIImage()),
-]
-
 final class SearchCyclone: Cyclone {
+    
     struct State: ReducibleState {
         enum Event: EventType {
-            case load(tracks: [SearchItem])
+            case load(tracks: [Track])
         }
 
         var tracks: [SearchItem]
@@ -27,12 +23,14 @@ final class SearchCyclone: Cyclone {
         static func reduce(state: State, _ event: Event) -> State {
             switch event {
             case .load(let tracks):
-                return .init(tracks: tracks)
+                return .init(tracks: tracks.map { SearchItem(from: $0) })
             }
         }
     }
 
-    let load = Observable.just(tracks).asAction(Event.load)
+    private let pool = TracksPool()
+
+    lazy var load = pool.search(byName: "Careless").asAction(Event.load)
 
     lazy var output = state(from: load)
 
